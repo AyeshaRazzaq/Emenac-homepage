@@ -1,0 +1,48 @@
+*, *::before, *::after{margin: 0; padding: 0;box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body {font-family: var(--ff-sanspro); font-weight: 400;}
+h1,h2,h3,h4,h5,h6 {margin: 0; font-family: var(--ff-quicksand);}
+ul {margin: 0; padding: 0;}
+li {list-style: none; list-style-position: inside; font-size: var(--fs-base);}
+p {margin: 0; color: #000; font-size: var(--fs-base); line-height: 28.64px;}
+a {display: block; width: fit-content; color: var(--c-dark); text-decoration: none; font-size: var(--fs-base);}
+button { background-color:(--fs-danger);  border: none; cursor: pointer;}
+img {max-width: 100%; height: auto; vertical-align: middle; font-style: italic; font-size: 14px;}
+input, textarea {font-family: var(--ff-primary);}
+
+.container {max-width: var(--container-size); margin-inline: auto; padding-inline: var(--container-px);}
+.button {font-family: var(--ff-quicksand); font-size: var(--fs-base); font-weight: 700; background-color: var(--c-danger); color: #fff; padding: 12px; line-height: 17.92px; text-align: center; border-radius: 7px;}
+.button:hover {background-color: var(--fs-hov);transition: (var(--transition));}
+
+/* FONT FAMILY */
+@font-face {
+    font-family: 'source sans pro';
+    font-weight: 400;
+    font-size: 16px;
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.ttf');
+}
+@font-face {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    src: url('../fonts/quicksand/Quicksand/static/Quicksand-Regular.ttf');
+}
+/* variables */
+:root{
+    --container-size:"1230px";
+    --container-px: 15px;
+    --ff-sanspro:'source sans pro';
+    --ff-quicksand:'Quicksand';    
+
+/* font size */
+--fs-xl: 36px;
+--fs-lg: 32px;
+--fs-md: 26px;
+--fs-sm: 20px;
+--fs-base: 16px;
+/* colors */
+    --fs-primary: #2188FDCC;
+    --fs-danger: #EF233C;
+    --fs-hov:#c0162b;
+/* transition */
+--transition: 0.6s;
+}
